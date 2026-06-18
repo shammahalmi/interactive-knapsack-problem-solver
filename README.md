@@ -1,13 +1,17 @@
-# Knapsack Problem Solver
+# Knapsack Problem Solver and Algorithm Analysis
 
 ## Project Overview
 
-This project is an interactive application for solving and comparing different variants of the Knapsack Problem.
+This project provides both an interactive application and a comprehensive experimental analysis of the Knapsack Problem.
 
-The system allows users to enter custom item weights, values, and knapsack capacity, then compares the solutions produced by multiple optimization approaches.
+The repository contains:
 
-The application was developed using Streamlit and provides visual comparisons of solution quality and execution time.
+* A Streamlit-based web application for solving knapsack problems interactively.
+* A detailed Jupyter Notebook that analyzes and compares different knapsack algorithms using multiple performance metrics.
 
+The project demonstrates the implementation, evaluation, and comparison of three classical variants of the Knapsack Problem.
+
+---
 
 ## Algorithms Implemented
 
@@ -15,85 +19,127 @@ The application was developed using Streamlit and provides visual comparisons of
 
 A Dynamic Programming approach where each item can be selected at most once.
 
-Time Complexity:
-
-O(n × W)
-
-
+**Time Complexity:** O(n × W)
 
 ### Unbounded Knapsack
 
 A Dynamic Programming approach where items can be selected multiple times.
 
-Time Complexity:
-
-O(n × W)
-
-
+**Time Complexity:** O(n × W)
 
 ### Fractional Knapsack
 
 A Greedy algorithm that selects items according to their value-to-weight ratio and allows fractional item selection.
 
-Time Complexity:
+**Time Complexity:** O(n log n)
 
-O(n log n)
+---
 
+## Repository Structure
 
+```text
+knapsack-problem-solver/
+│
+├── app.py
+├── knapsack_algorithm_analysis.ipynb
+├── README.md
+```
+
+### app.py
+
+Interactive Streamlit application that allows users to:
+
+* Enter custom weights and values
+* Define knapsack capacity
+* Compare algorithm performance
+* Visualize selected items
+* Analyze execution times
+* View capacity utilization statistics
+
+### knapsack_algorithm_analysis.ipynb
+
+Research-oriented notebook containing:
+
+* Performance Analysis
+* Solution Quality Comparison
+* Runtime Analysis
+* Scalability Analysis
+* Convergence Analysis
+* Diversity Analysis
+* Function Evaluation Analysis
+* Sensitivity Analysis
+* Statistical Evaluation
+* Final Comparative Discussion
+
+---
 
 ## Features
 
-* Interactive user interface
-* Custom weight and value inputs
-* Adjustable knapsack capacity
-* Algorithm performance comparison
-* Execution time measurement
-* Selected item analysis
-* Capacity utilization statistics
-* Automatic best algorithm identification
-* Visual result dashboards
+### Interactive Application
 
+* Streamlit-based user interface
+* Custom problem inputs
+* Real-time algorithm comparison
+* Visualization dashboard
+* Best algorithm identification
 
+### Experimental Analysis
+
+* Comparative algorithm evaluation
+* Performance benchmarking
+* Complexity analysis
+* Statistical testing
+* Scalability experiments
+
+---
 
 ## Technologies Used
 
 * Python
 * Streamlit
 * Pandas
+* NumPy
 * Matplotlib
+* SciPy
 * Jupyter Notebook
 
-
+---
 
 ## Visualizations
 
-The application provides:
+The project includes:
 
 * Maximum Value Comparison
-* Execution Time Comparison
-* Selected Item Tables
-* Capacity Usage Statistics
-* Algorithm Performance Dashboard
+* Runtime Comparison
+* Capacity Usage Analysis
+* Convergence Curves
+* Diversity Curves
+* Scalability Analysis Charts
+* Statistical Evaluation Results
 
+---
 
 ## Learning Outcomes
 
-This project demonstrates:
+This project demonstrates practical experience in:
 
 * Dynamic Programming
 * Greedy Algorithms
-* Algorithm Analysis
-* Complexity Comparison
-* Interactive Data Applications
-* Streamlit Development
+* Algorithm Design
+* Performance Evaluation
+* Statistical Analysis
+* Data Visualization
+* Interactive Application Development
+* Streamlit Deployment
 
-
+---
 
 ## Future Improvements
 
-* Add Genetic Algorithm solutions
-* Add Branch and Bound implementation
-* Support large-scale benchmark datasets
-* Export results to CSV or PDF
-* Add advanced performance analytics
+* Branch and Bound Implementation
+* Multi-Objective Knapsack Optimization
+* Additional Benchmark Datasets
+* Export Results to CSV/PDF
+* Advanced Visualization Dashboard
 
+---
